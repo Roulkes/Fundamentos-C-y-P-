@@ -1,0 +1,85 @@
+Nombre = "Aaron" #Tipo de dato String (Cadena de caracteres)
+print(Nombre) 
+
+import sys
+edad = 19 
+print("tu edad es:",edad)
+#Este es un comentario de linea simple
+""" comentario de multiple 
+linea 
+"""
+#el tipo de dato INT utiliza diferente cantidad de bits segun el leg de prog. 
+#por ejemplo en c utiliza 16 bits
+print(sys.getsizeof(edad))
+edad = edad + 1 
+print(edad)
+
+estatura = 1.56
+print(estatura)
+print(sys.getsizeof(estatura))
+estatura = estatura + 0.1
+print( round(estatura, 2) )
+
+edad += 1
+print("tu edad es: ", edad)
+edad -= 1
+print("tu edad es: ", edad)
+edad /= 2
+print("tu edad a la mitad es: ", edad)
+
+edad = 21
+#volver a calculkar la mitad de la edad pero solo dejar la parte entera
+edad //= 2
+print("tu edad a la mitad es: ", edad)
+#en la mayoruia de los lenguajes no permite operaciones entre diferentes tipos
+#de datos, en python
+
+numero = edad / 2.0
+print(numero)
+
+numero *= 3
+print (numero)
+
+numero = 5.0
+numero **= 2 
+print(numero)
+
+#operador modulo %
+numero = 21 
+print(numero / 2)
+print(numero // 2)
+
+#operador modulo da el residuo de una division entera
+print(numero % 2)
+numero = 24
+print("Residuo de 24/5: ",numero % 5)
+
+#operadores logicos
+#para saber si un numero es par
+print(numero % 2 == 0)
+
+#diferencia
+print("24 es mayor que 23,",numero > 23)
+print("24 es menor que 23,",numero < 23)
+print("24 es diferente de 23, ", numero != 23)
+print("24 es mayor o igual que 24,",numero >= 24)
+print("24 es menor o igual que 23,", numero <=23)
+
+print("el tipo de dato de la variable numero es:", type(numero))
+
+print("el tipo de dato de la variable numero / 2 es:", type(numero/ 2))
+
+#3 tipos de string
+Nombre = 'Aaron' 
+carrera = "Ingenieria en computacion"
+frase = """El conocimiento me persigue ... 
+pero yo soy mas rapido"""
+print(Nombre)
+print(carrera)
+print(frase)
+
+#la funcion type de python te devuelve el tipo de dato de una variable o expresion
+print(type(Nombre))
+
+paterno = str("Gordillo")
+print(paterno)
